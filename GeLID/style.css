@@ -1,0 +1,1129 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy/Gilroy-Bold.ttf');
+    src: url('Gilroy/Gilroy-Regular.ttf');
+  }
+  @font-face {
+  font-family: Satoshi;
+  src: url('Satoshi/Satoshi-Regular.otf');
+  src: url('Satoshi/Satoshi-Bold.otf');
+  src: url('Satoshi/Satoshi-Medium.otf');
+}
+
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #F4FCFF;
+    
+}
+
+.dm{
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 10px;
+    background-color: rgb(71, 72, 76);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dark-mode {
+    background-color: rgb(37, 37, 37);
+    color: rgb(210, 210, 210);
+}
+.dark-mode .start h4{
+    color: #94DFF6;
+}
+.dark-mode .what h4{
+    color: #94DFF6;
+}
+.dark-mode .role h4{
+    color: #94DFF6;
+}
+.dark-mode .why h4{
+    color: #94DFF6;
+}
+.dark-mode .time h4{
+    color: #94DFF6;
+}
+.dark-mode .reques h4{
+    color: #94DFF6;
+}
+.dark-mode .problem h4{
+    color: #94DFF6;
+}
+.dark-mode .personas h4{
+    color: #94DFF6;
+}
+.dark-mode .userflow h4{
+    color: #94DFF6;
+}
+.dark-mode .final h4{
+    color: #94DFF6;
+}
+.dark-mode .thank h2{
+    color: #94DFF6;
+}
+.dark-mode h5{
+    color: #94DFF6;
+}
+
+@keyframes ice-up{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes up{
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes ice-down{
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes text-up{
+    0%{
+        transform: translateY(500%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #7a7a7a00;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(119, 119, 119);
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(88, 88, 88);
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+
+@media only screen and (min-width:1025px){
+    .start .logo{
+        width: 10%;
+        padding-left: 46%;
+        padding-top: 20%;
+        animation: up;
+        animation-duration: 1s;
+    }
+    .start h4{
+        text-align: center;
+        font-family: 'Gilroy';
+        font-size: 500;
+        font-size: 24px;
+        animation: text-up;
+        animation-duration: 1s;
+    }
+    .start .ice .one{
+        opacity: 40%;
+        width: 15%;
+        position: absolute;
+        top: 65%;
+        left: -5%;
+        animation: ice-up;
+        animation-duration: 1s;
+    }
+    .start .ice .two{
+        opacity: 40%;
+        width: 15%;
+        position: absolute;
+        top: 0%;
+        right:0;
+        animation: ice-down;
+        animation-duration: 1s;
+    }
+
+
+    .what{
+        padding-top: 30%;
+    }
+    .what .bg{
+        z-index: -1;
+        right: 0;
+        position: absolute;
+        background-image: url(Images/Mock-ups/GeLID\ Mock.png);
+        background-size: cover;
+        background-position: left;
+        width: 600px;
+        height: 600px;
+    }
+    .what h4{
+        color: #2A7187;
+        padding-top: 12%;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        padding-left: 200px;
+    }
+    .what img{
+        width: 17%;
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 200px;
+    }
+    .what p{
+        line-height: 1.6;
+        padding-left: 200px;
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: justify;
+        width: 30%;
+    }
+
+
+
+    .role{
+        padding-top: 40%;
+    }
+    .role h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+    .role img{
+        width: 9%;
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 45%;
+    }
+    .grid{
+        padding-top: 80px;
+        padding-left: 20%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+    .grid .research{
+        background-image: url(Images/research.png);
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+    }
+    .grid .research p{
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 25px;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+    }
+    .grid .wireframe{
+        background-image: url(Images/wireframe.png);
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+    }
+    .grid .wireframe p{
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 25px;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+    }
+    .grid .userflow{
+        background-image: url(Images/userflow.png);
+        background-size: contain;
+        background-position: 0 1px;
+        background-repeat: no-repeat;
+    }
+    .grid .userflow p{
+        position: absolute;
+        margin-top: 78px;
+        margin-left: 25px;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+    }
+    .grid .UI{
+        background-image: url(Images/UI.png);
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+    }
+    .grid .UI p{
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 25px;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    .deco1{
+        opacity: 30%;
+        width: 15%;
+        position: absolute;
+        margin-top: -25%;
+        right: 0;
+    }
+
+
+    .why{
+        padding-top: 30%;
+    }
+    
+    .why h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+    .why .l1{
+        width: 2%;
+        position: absolute;
+        margin-left: 37%;
+        margin-top: 25px;
+    }
+    .why .l2{
+        width: 2%;
+        position: absolute;
+        margin-left: 60%;
+        margin-top: -50px;
+    }
+    .why p{
+        padding-top: 40px;
+        padding-left: 30%;
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: justify;
+        width: 40%;
+        line-height: 1.5;
+    }
+
+    .deco2{
+        opacity: 30%;
+        width: 15%;
+        position: absolute;
+        margin-top: -25%;
+        left: -5%;
+    }
+
+
+    .time{
+        padding-top: 20%;
+    }
+    .time h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+    .time img{
+        padding-left: 15%;
+        padding-top: 150px;
+        width: 70%;
+    }
+
+    .problem{
+        padding-top: 20%;
+    }
+    .problem h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .problem p{
+        padding-left: 10%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+    }
+    .problem .chg{
+        padding-left: 10%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        line-height: 2;
+    }
+
+
+    .reques{
+        padding-top: 20%;
+    }
+    .reques h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+    .reques .title{
+        padding-top: 10%;
+        padding-left: 35%;
+        text-align: center;
+        color: #2A7187;
+        font-family: 'Satoshi';
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .reques p{
+        padding-left: 35%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        width: 30%;
+    }
+
+    .results{
+        padding-top: 15%;
+    }
+    .results img{
+        width: 50%;
+        padding-left: 25%;
+    }
+
+    .personas{
+        padding-top: 20%;
+    }
+    .personas h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .ram{
+        padding-top: 50px;
+        padding-left: 10%;
+    }
+    .ram .profile-ram{
+        display: inline-block;
+        margin-left: 10%;
+        background-image: url(Images/Ram.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 350px;
+        border-radius: 200px 200px 200px 200px;
+        box-shadow: 0px 20px 40px #122e366d;
+    }
+    .ram h5{
+        font-family: 'Satoshi';
+        font-size: 24px;
+        position: absolute;
+        margin-left: 31.5%;
+        margin-top: -20%;
+    }
+    .ram p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        position: absolute;
+        margin-left: 31.5%;
+        margin-top: -17%;
+    }
+    .ram .content{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: justify;
+        width: 40%;
+        position: absolute;
+        margin-left: 31.5%;
+        margin-top: -12%;
+    }
+
+    .amish{
+        padding-top: 15%;
+        padding-left: 10%;
+    }
+    .amish .profile-amish{
+        display: inline-block;
+        margin-left: 10%;
+        background-image: url(Images/amish.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 350px;
+        border-radius: 200px 200px 200px 200px;
+        box-shadow: 0px 20px 40px #122e366d;
+    }
+    .amish h5{
+        font-family: 'Satoshi';
+        font-size: 24px;
+        position: absolute;
+        margin-left: 31.5%;
+        margin-top: -20%;
+    }
+    .amish p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        position: absolute;
+        margin-left: 31.5%;
+        margin-top: -17%;
+    }
+    .amish .content{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: justify;
+        width: 40%;
+        position: absolute;
+        margin-left: 31.5%;
+        margin-top: -12%;
+    }
+
+
+    .userflow{
+        padding-top: 20%;
+    }
+    .userflow h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+    .userflow p{
+        font-family: 'Satoshi';
+        font-size: 14px;
+        text-align: center;
+    }
+    .userflow img{
+        width: 100%;
+    }
+
+
+    .final{
+        padding-top: 30%;
+    }
+    .final h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+    .home{
+        padding-top: 20%;
+        padding-left: 80px;
+    }
+    .home img{
+        float: left;
+        width: 30%;
+        padding-left: 15%;
+    }
+    .home h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        padding-left: 50%;
+        padding-top: 80px;
+    }
+    .home p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        padding-left: 50%;
+        width: 30%;
+    }
+    .booking{
+        padding-top: 30%;
+    }
+    .booking img{
+        width: 40%;
+        padding-left: 30%;
+    }
+    .booking h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: center;
+    }
+    .booking p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        padding-left: 34%;
+        width: 30%;
+    }
+    .map{
+        padding-top: 20%;
+        padding-left: 80px;
+    }
+    .map img{
+        float: right;
+        width: 30%;
+        padding-right: 20%;
+    }
+    .map h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        padding-top: 80px;
+        padding-left: 12%;
+
+    }
+    .map p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        padding-left: 12%;
+        width: 30%;
+    }
+
+    .collage{
+        padding-top: 50%;
+    }
+    .collage img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+
+    .thank{
+        padding-top:160%;
+    }
+    .thank h2{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 38px;
+        text-align: center;
+    }
+
+
+    .credits{
+        padding-top: 30%;
+    }
+    .credits p{
+        font-family: 'Satoshi';
+        font-size: 14px;
+        text-align: center;
+    }
+    .credits img{
+        width: 4%;
+        padding-left: 48%;
+        padding-bottom: 20%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:480px){
+    .start .logo{
+        width: 30%;
+        padding-left: 38%;
+        padding-top: 50%;
+        animation: up;
+        animation-duration: 1s;
+    }
+    .start h4{
+        text-align: center;
+        font-family: 'Gilroy';
+        font-size: 500;
+        font-size: 18px;
+        animation: text-up;
+        animation-duration: 1s;
+    }
+    .start .ice .one{
+        opacity: 40%;
+        width: 50%;
+        position: absolute;
+        top: 55%;
+        left: -25%;
+        animation: ice-up;
+        animation-duration: 1s;
+    }
+    .start .ice .two{
+        opacity: 40%;
+        width: 30%;
+        position: absolute;
+        top: 0%;
+        right:0;
+        animation: ice-down;
+        animation-duration: 1s;
+    }
+
+
+    .what{
+        padding-top: 80%;
+    }
+    .what .bg{
+        z-index: -1;
+        right: 0;
+        position: absolute;
+        background-image: url(Images/Mock-ups/GeLID\ Mock.png);
+        background-size: cover;
+        background-position: left;
+        width: 280px;
+        height: 500px;
+    }
+    .what h4{
+        color: #2A7187;
+        padding-top: 28%;
+        font-family: 'Gilroy';
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    .what img{
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .what p{
+        line-height: 1.6;
+        padding-left: 20px;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: left;
+        width: 50%;
+    }
+
+
+    .role{
+        padding-top: 100%;
+    }
+    .role h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 24px;
+        text-align: center;
+    }
+    .role img{
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 37%;
+    }
+    .grid{
+        padding-top: 50px;
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 40% 40% ;
+        grid-template-rows: auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 25px;
+    }
+    .grid .research{
+        background-image: url(Images/research.png);
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+    }
+    .grid .research p{
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 5%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+    }
+    .grid .wireframe{
+        background-image: url(Images/wireframe.png);
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+    }
+    .grid .wireframe p{
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 5%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+    }
+    .grid .userflow{
+        background-image: url(Images/userflow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .grid .userflow p{
+        position: absolute;
+        margin-top: 8.2%;
+        margin-left: 8%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+    }
+    .grid .UI{
+        background-image: url(Images/UI.png);
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+    }
+    .grid .UI p{
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 5%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+    }
+
+    .deco1{
+        opacity: 30%;
+        width: 30%;
+        position: absolute;
+        margin-top: 30%;
+        right: 0;
+    }
+
+    .why{
+        padding-top: 100%;
+    }
+    
+    .why h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .why .l1{
+        width: 8%;
+        position: absolute;
+        margin-left: 55px;
+        margin-top: 12px;
+    }
+    .why .l2{
+        width: 8%;
+        position: absolute;
+        margin-left: 77%;
+        margin-top: -50px;
+    }
+    .why p{
+        padding-top: 24px;
+        padding-left: 10%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: justify;
+        width: 80%;
+    }
+
+
+    .deco2{
+        opacity: 30%;
+        width: 30%;
+        position: absolute;
+        margin-top: 30%;
+        left: 0;
+    }
+
+
+    .time{
+        padding-top: 100%;
+    }
+    .time h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .time img{
+        width: 100%;
+    }
+
+    .deco1{
+        opacity: 30%;
+        width: 30%;
+        position: absolute;
+        margin-top: 30%;
+        right: 0;
+    }
+    .deco1pc{
+        display: none;
+    }
+
+
+    .problem{
+        padding-top: 100%;
+    }
+    .problem h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .problem p{
+        padding-top: 12px;
+        padding-left: 10%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: justify;
+        width: 80%;
+    }
+    .problem .chg{
+        padding-left: 10%;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        line-height: 2;
+    }
+
+
+    .reques{
+        padding-top: 100%;
+    }
+    .reques h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .reques .title{
+        padding-top: 50px;
+        padding-left: 120px;
+        color: #2A7187;
+        font-family: 'Satoshi';
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .reques p{
+        padding-left: 65px;
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: justify;
+        width: 65%;
+    }
+
+    .results{
+        padding-top: 30%;
+    }
+    .results img{
+        width: 85%;
+        padding-left: 30px;
+    }
+
+    .personas{
+        padding-top: 50%;
+    }
+    .personas h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .personas .ram{
+        padding-top: 50px;
+    }
+    .personas .ram .profile-ram{
+        background-image: url("Images/Ram.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 300px;
+        border-radius: 100px 100px 100px 100px;
+        margin-left: 100px;
+        box-shadow: 0px 20px 40px #122e366d;
+    }
+    .personas .ram h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .personas .ram p{
+        font-family: 'Satoshi';
+        font-size: 14px;
+        text-align: center;
+    }
+    .personas .ram .content{
+        padding-top: 20px;
+        font-size: 18px;
+        width: 80%;
+        text-align: justify;
+        padding-left: 30px;
+    }
+    .personas .amish{
+        padding-top: 50px;
+    }
+    .personas .amish .profile-amish{
+        background-image: url("Images/amish.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 300px;
+        border-radius: 100px 100px 100px 100px;
+        margin-left: 100px;
+        box-shadow: 0px 20px 40px #122e366d;
+    }
+    .personas .amish h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .personas .amish p{
+        font-family: 'Satoshi';
+        font-size: 14px;
+        text-align: center;
+    }
+    .personas .amish .content{
+        padding-top: 20px;
+        font-size: 18px;
+        width: 80%;
+        text-align: justify;
+        padding-left: 30px;
+    }
+
+
+
+    .userflow{
+        padding-top: 50%;
+    }
+    .userflow h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center;
+    }
+    .userflow p{
+        font-family: 'Satoshi';
+        font-size: 14px;
+        text-align: center;
+    }
+    .userflow img{
+        padding-top: 80px;
+        width: 100%;
+    }
+
+
+    .final{
+        padding-top: 50%;
+    }
+    .final h4{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center; 
+    }
+
+    .final .home{
+        padding-top: 50px;
+    }
+
+    .final .home img{
+        width: 80%;
+        padding-left: 35px;
+    }
+    .final .home h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .final .home p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+        padding-left: 30px;
+    }
+
+
+
+    .final .booking{
+        padding-top: 50%;
+    }
+
+    .final .booking img{
+        width: 80%;
+        padding-left: 35px;
+    }
+    .final .booking h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .final .booking p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+        padding-left: 30px;
+    }
+
+
+    .final .map{
+        padding-top: 50%;
+    }
+
+    .final .map img{
+        width: 80%;
+        padding-left: 35px;
+    }
+    .final .map h5{
+        font-family: 'Satoshi';
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .final .map p{
+        font-family: 'Satoshi';
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    .collage{
+        padding-top: 80%;
+    }
+    .collage img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .thank{
+        padding-top: 180%;
+    }
+    .thank h2{
+        color: #2A7187;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        text-align: center; 
+    }
+
+
+    .credits{
+        padding-top: 30%;
+    }
+    .credits p{
+        font-family: 'Satoshi';
+        font-size: 14px;
+        text-align: center;
+    }
+    .credits img{
+        width: 10%;
+        padding-left: 45%;
+        padding-bottom: 20%;
+    }
+}
